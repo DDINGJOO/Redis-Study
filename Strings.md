@@ -7,9 +7,11 @@
 ### INIT
 
 - gradle 초기 import문
+
 ![StringsInit.png](images/StringsInit.png)
 
 - main에서의 사용 (try문은 .cloes() 하려고   스코프를 만든것 마지막에 .close() 하면댐
+
 ![Strings_main.png](images/Strings_main.png)
 
 
