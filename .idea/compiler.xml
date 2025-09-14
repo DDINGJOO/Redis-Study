@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <bytecodeTargetLevel>
+      <module name="strings" target="24" />
+      <module name="Strings" target="24" />
+      <module name="Strings.main" target="24" />
+      <module name="Strings.test" target="24" />
+      <module name="StringsP" target="24" />
+      <module name="StringsP.main" target="24" />
+      <module name="StringsP.test" target="24" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

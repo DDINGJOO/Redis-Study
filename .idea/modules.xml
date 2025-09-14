@@ -3,6 +3,11 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/InMemoryDatabase.iml" filepath="$PROJECT_DIR$/InMemoryDatabase.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Strings.main.iml" filepath="$PROJECT_DIR$/.idea/modules/Strings.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Strings.test.iml" filepath="$PROJECT_DIR$/.idea/modules/Strings.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/StringsP.iml" filepath="$PROJECT_DIR$/StringsP.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/StringsP.main.iml" filepath="$PROJECT_DIR$/.idea/modules/StringsP.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/StringsP.test.iml" filepath="$PROJECT_DIR$/.idea/modules/StringsP.test.iml" />
     </modules>
   </component>
 </project>
