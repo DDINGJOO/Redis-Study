@@ -114,9 +114,18 @@
  
   - INCR ,DECR
     - 증가/감소 원자적 계산
+  
+  - DEL [key] / UNLINK [key]
+    - 키 데이터 삭제 
+    - DEL : 동기적 삭제 : 삭제 완료까지 버퍼링 
+    - UNLINK : 비동기적 삭제  : 삭제 요청후 알빠누 빠이 < 리스트 같은 데이터가 큰 객체 삭제할때 사용 
+    
   - *TTL ,  EXPIRE*
     - TTL [key] : 남은 만료시간 체크 
     - EXPIRE [KEY] [SECOND] : 만료시간 설정 (TTL 설정)
+
+  - MEMORY USAGE 
+    - 메모리 적재 량 확인 
     
 ![CommandString_1.png](images/CommandString_1.png)
 - users:1:email > 이런식으로, 여러 정보를 키에 같이 저장하는 경우가 많음
@@ -138,10 +147,45 @@
 
 - TTL 관련 실습 코드 
 
-![CommandTTL_1.png](images/CommandTTL_1.png)
+![CommandTTL_2.png](images/CommandTTL_2.png)
+
+- TTL 설정 X -> -1 , 파기된 KEY(OR 없는 키) -> -2
+
+- MEMORY USAGE
+![MEMORY_USAGE.png](images/MEMORY_USAGE.png)
 
 
 
+---
+
+### LISTS
+- Linked List 구조로 데이터 저장
+- Commands
+  - LPUSH, RPUSH
+  - LPOP, RPOP
+  - LLEN 
+  - LRANGE
+    - 리스트 인덱스 값으로 조회
+    - 0 -1 : 전체 조회
+
+![Lpush.png](images/Lpush.png)
+![전체조회.png](images/%EC%A0%84%EC%B2%B4%EC%A1%B0%ED%9A%8C.png)
 
 
 
+---
+
+### SETS
+- Unordered Collection, 유니크 값 보장 , 순서 보장 X
+- Commands
+  - SADD, SREM
+  - SISMEMBER  
+    - Set Is Member : 맴버 있는지 조회
+  - SMEMBERS
+    - 전체 맴버 조회
+  - SCARD
+    - SETS 에 있는 데이터 수 조회
+  - SINTER(O(MN)) // 나머지는 기본적으로 O(N)
+    - SINTER : 두개의 SETS에서 공통 데이터 조회
+
+![Sets.png](images/Sets.png)
