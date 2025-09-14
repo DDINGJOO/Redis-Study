@@ -218,9 +218,43 @@
 - 자바의 HashMap  key ->  { (field ,value) , (field ,value) }
 - Commands
   - HSET /, HGET , HMGET , HGETALL
-    - hset [key] [field] [value]
+    - hset [key] [field] [value] [field] [value] ...
     - hget [key] [field]
     - hgetall [key]
   - HDEL
   - HINCRBY
 ![Hasj.png](images/Hasj.png)
+
+
+
+---
+
+### Geospatial
+- 위도, 경도 위치 저장 
+- Commands
+  - GEOADD O(n)
+    - geoadd [key] [longitude] [latitude] [member] [longitude] [latitude] [member] ...
+  - GEODIST
+    - geodist [key] [member1] [member2]
+  - GEOHASH
+    - geohash [key] [member1] [member2]
+  - GEOPOS
+    - geopos [key] [member1] [member2]
+  - GEOSEARCH // O(n+logm)
+    - geosearch [key] [longitude] [latitude] [radius] [unit] [withcoord] [withdist] [withhash] [count] [sort] [store] [storedist] [storehash] 
+
+
+
+
+---
+
+### BITMAP 
+- bit array  // 0과 1 값만 으로 이루어진 비트배열 
+  - 메모리를 적게 사용하여 대량의 데이터 저장에 유리 SET -> BITMAP 검토도 메모리 리소스의 관리의 옵션중하나
+- Commands
+  - SETBIT , GETBIT , BITCOUNT
+    - setbit [key] [offset] [value]
+    - getbit [key] [offset]
+    - bitcount [key] [start] [end]
+  - BITOP
+    - bitop [operation] [destination] [source1] [source2] ...
