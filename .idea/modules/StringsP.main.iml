@@ -7,7 +7,14 @@
       <sourceFolder url="file://$MODULE_DIR$/../../StringsP/src/main/java" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/../../StringsP/src/main/resources" type="java-resource" />
     </content>
-    <orderEntry type="jdk" jdkName="corretto-21" jdkType="JavaSDK" />
+    <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="Gradle: redis.clients:jedis:6.1.0" level="project" />
+    <orderEntry type="library" name="Gradle: redis.clients.authentication:redis-authx-core:0.1.1-beta2" level="project" />
+    <orderEntry type="library" name="Gradle: org.slf4j:slf4j-api:1.7.36" level="project" />
+    <orderEntry type="library" name="Gradle: org.apache.commons:commons-pool2:2.12.1" level="project" />
+    <orderEntry type="library" name="Gradle: org.json:json:20250517" level="project" />
+    <orderEntry type="library" name="Gradle: com.google.code.gson:gson:2.13.1" level="project" />
+    <orderEntry type="library" name="Gradle: com.google.errorprone:error_prone_annotations:2.38.0" level="project" />
   </component>
 </module>

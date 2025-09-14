@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="Gradle: redis.clients.authentication:redis-authx-core:0.1.1-beta2" type="java-imported" external-system-id="GRADLE">
+    <properties groupId="redis.clients.authentication" artifactId="redis-authx-core" version="0.1.1-beta2" baseVersion="0.1.1-beta2" />
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/redis.clients.authentication/redis-authx-core/0.1.1-beta2/4037345ff29fb22c737bab2ed116a34262718ae5/redis-authx-core-0.1.1-beta2.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/redis.clients.authentication/redis-authx-core/0.1.1-beta2/fb71f772cfaa2ea0826f581f0096df5f30335bfc/redis-authx-core-0.1.1-beta2-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/redis.clients.authentication/redis-authx-core/0.1.1-beta2/ac2c155466d5d18e31a995e288598093931f873e/redis-authx-core-0.1.1-beta2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
