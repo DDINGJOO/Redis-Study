@@ -189,3 +189,38 @@
     - SINTER : 두개의 SETS에서 공통 데이터 조회
 
 ![Sets.png](images/Sets.png)
+
+
+--- 
+### SORTED SETS
+- ordered collection , 유니크 값 보장, 특정 비교 방식(커스텀 정렬) 가능 
+  - leader board, rate limit 
+  - leader board, rate limit 에서 사용
+
+- Commands
+  - ZADD , ZREM
+    - zadd [key] [score] [value]
+    - zrem [key] [value]
+  - ZRANGE
+  - ZCARD
+  - ZRANK / ZREVERANK
+    - 오름차순, 내림차순
+  - ZINCRBY
+    - 정렬 점수 원자적 증가
+    
+![zrank.png](images/zrank.png)
+![zset.png](images/zset.png)
+
+
+---
+
+### HASHES
+- 자바의 HashMap  key ->  { (field ,value) , (field ,value) }
+- Commands
+  - HSET /, HGET , HMGET , HGETALL
+    - hset [key] [field] [value]
+    - hget [key] [field]
+    - hgetall [key]
+  - HDEL
+  - HINCRBY
+![Hasj.png](images/Hasj.png)
