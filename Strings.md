@@ -31,3 +31,8 @@
 - 결과 
 ![MgetInSout.png](images/MgetInSout.png)
 ![Mget_1.png](images/Mget_1.png)
+
+---
+### INCR
+![Incr_1.png](images/Incr_1.png)
+![INcr_2.png](images/INcr_2.png)

@@ -15,14 +15,24 @@ public class Main {
 
             try{
                 Jedis jedis = jedisPool.getResource();
-                jedis.set("users:100:email", "ddingsha9@teambind.co.kr");
-                jedis.set("users:100:name", "dding joo ");
-                jedis.set("users:200:age", "20");
-                String value = jedis.get("users:100:email");
-                System.out.println(value);
+//                jedis.set("users:100:email", "ddingsha9@teambind.co.kr");
+//                jedis.set("users:100:name", "dding joo ");
+//                jedis.set("users:200:age", "20");
+//                String value = jedis.get("users:100:email");
+//                System.out.println(value);
+//
+//                List<String> val  = jedis.mget("users:100:email", "users:100:name", "users:200:age");
+//                System.out.println(val.toString());
 
-                List<String> val  = jedis.mget("users:100:email", "users:100:name", "users:200:age");
-                System.out.println(val.toString());
+                jedis.incr("count");
+                System.out.println(jedis.get("count"));
+                jedis.incr("count");
+                System.out.println(jedis.get("count"));
+                jedis.incr("count");
+                System.out.println(jedis.get("count"));
+                jedis.incrBy("count", 10);
+                System.out.println(jedis.get("count"));
+
             }catch(Exception e){
                 e.printStackTrace();
             }
