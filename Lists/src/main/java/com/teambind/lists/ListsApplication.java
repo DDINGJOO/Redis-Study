@@ -15,11 +15,26 @@ public class ListsApplication {
 
                 //list
                 // stack
-                jedis.rpush("queuee", "aaaa", "aaaa", "bbbb");
-                List<String> stack1 =  jedis.lrange("queuee", 0, -1);
-                stack1.forEach(System.out::println);
+//                jedis.rpush("queueee", "aaaa", "aaaa", "bbbb");
+//                List<String> stack1 =  jedis.lrange("queuee", 0, -1);
+////                stack1.forEach(System.out::println);
+//                System.out.println(jedis.rpop("queueee"));
+//                System.out.println(jedis.rpop("queueee"));
+//                System.out.println(jedis.rpop("queueee"));
                 // queue
+                jedis.rpush("que", "aaaa", "aaaa", "bbbb");
+                List<String> que =  jedis.lrange("que", 0, -1);
+                que.forEach(System.out::println);
+                System.out.println("---------------------------------");
+//                System.out.println(jedis.lpop("que"));
+//                System.out.println(jedis.lpop("que"));
+//                System.out.println(jedis.lpop("que"));
                 // block pop
+                System.out.println(jedis.blpop(10, "que"));
+                System.out.println(jedis.blpop(10, "que"));
+                System.out.println(jedis.blpop(10, "que"));
+                System.out.println(jedis.blpop(2 , "que"));
+
             } catch (Exception e) {
                 e.printStackTrace();
             }

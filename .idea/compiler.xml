@@ -2,8 +2,8 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <bytecodeTargetLevel>
-      <module name="strings" target="24" />
       <module name="Strings" target="24" />
+      <module name="strings" target="24" />
     </bytecodeTargetLevel>
   </component>
 </project>

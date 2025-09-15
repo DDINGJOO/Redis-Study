@@ -260,3 +260,13 @@
     - bitop [operation] [destination] [source1] [source2] ...
 
 ---
+
+
+
+
+---
+### 레디스 성능 짤 
+![img.png](ReadMe_images/img.png)
+- 파이프 라인 했을 경우 , 200000만건 입력시 2초 이내로 소요(빌드 통신 뭐 등등 시간 다 합쳐서)
+- 파이프 라인을 해봅시가...
+![img.png](ReadMe_images/12312341₩.png)

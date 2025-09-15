@@ -28,3 +28,11 @@
 
 ## in JAVA
 ![img_3.png](ReadMe_images/lists/img_3.png)
+
+
+![img_4.png](ReadMe_images/lists/img_4.png)
+
+![img_5.png](ReadMe_images/lists/img_5.png)
+![img_6.png](ReadMe_images/lists/img_6.png)
+---
+
