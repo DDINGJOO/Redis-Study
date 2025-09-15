@@ -267,6 +267,20 @@
 
 ![img_2.png](ReadMe_images/img_2.png)
 - 트랜잭션 종료전에 요청시 Nil 값 반환
+- 중간에 잘못된 명령어 있을시 전부 롤백 (근데.. 실글사이드 쓰래드 단위이전에 가능..?)
+- 인자값이 잘못된경우는 그냥 빼고 처리
+
+- Transactional commands
+  - MULTI :  시작지점 
+  - EXEC : 명령어 집합 실행
+  - DISCARD : 트랜잭션 취소
+  - WATCH
+    - watch [key] [key] ...
+    - unwatch
+      - 동시의 같은 키를 수정하느 상황일시 트랜잭션 취소
+
+      - ![img_3.png](ReadMe_images/img_3.png)
+      - ![img_4.png](ReadMe_images/img_4.png)
 ---
 ### 레디스 성능 짤 
 ![img.png](ReadMe_images/img.png)
