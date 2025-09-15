@@ -38,3 +38,19 @@
 ### INCR
 ![Incr_1.png](images/Incr_1.png)
 ![INcr_2.png](images/INcr_2.png)
+
+
+
+---
+### Pipelining
+- 배치 처리를 해서 RTT 성능 저하 방지
+- Jedis 에서 제공하는 파이프 라인 객체 사용 
+
+![Pipelne.png](images/Pipelne.png)
+![pipe2.png](images/pipe2.png)
+
+
+- 올바른 사용 시
+
+![pipe6.png](images/pipe6.png)
+![pipe7.png](images/pipe7.png)

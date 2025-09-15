@@ -258,3 +258,5 @@
     - bitcount [key] [start] [end]
   - BITOP
     - bitop [operation] [destination] [source1] [source2] ...
+
+---

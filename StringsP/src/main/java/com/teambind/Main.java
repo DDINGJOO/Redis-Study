@@ -2,6 +2,7 @@ package com.teambind;
 
 import redis.clients.jedis.Jedis;
 import redis.clients.jedis.JedisPool;
+import redis.clients.jedis.Pipeline;
 
 import java.util.List;
 
@@ -33,8 +34,27 @@ public class Main {
                 jedis.incrBy("count", 10);
                 System.out.println(jedis.get("count"));
 
+
+
+
+                // pipeline
+                Pipeline pipeline = jedis.pipelined();
+                pipeline.set("key1", "value1");
+//                System.out.println(jedis.get("key1"));
+                pipeline.set("key2", "value2");
+                pipeline.set("key3", "value3");
+                pipeline.syncAndReturnAll();
+
+                System.out.println(jedis.get("key1"));
+                System.out.println(jedis.get("key2"));
+                System.out.println(jedis.get("key3"));
+
+
+
             }catch(Exception e){
                 e.printStackTrace();
+            }finally {
+                jedisPool.close();
             }
         }catch (Exception e){
             e.printStackTrace();
