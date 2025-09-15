@@ -54,10 +54,10 @@
 
 - redis-cli monitor
 	- monitor : 명령어 기록 모니터 
-    ![redis-cli-monitor.png](images/striongs/redis-cli-monitor.png)
+    ![redis-cli-monitor.png](ReadMe_images/striongs/redis-cli-monitor.png)
     - redis - banchmark(성능 테스트) 
-  ![img.png](images/striongs/img.png)
-  ![img_1.png](images/striongs/img_1.png)
+  ![img.png](ReadMe_images/striongs/img.png)
+  ![img_1.png](ReadMe_images/striongs/img_1.png)
       - 초당 92만개 정도 처리 가능
     - slowlog get : 10ms 이상 걸린 명령어 보여줌
       - format 
@@ -70,7 +70,7 @@
 
 	- info
       - 버전, 메모리 ㅈ정보, 세션 정보 등등... 
-      - ![redis-cli-info.png](images/striongs/redis-cli-info.png)
+      - ![redis-cli-info.png](ReadMe_images/striongs/redis-cli-info.png)
     - docker exec -it [constainer name] redis-cli --stat
       - 메모리 사용량, 사용률, 블락 횟수 등등 정보 초당 업데이트해서 보여줌
     - select [db index]
@@ -127,14 +127,14 @@
   - MEMORY USAGE 
     - 메모리 적재 량 확인 
     
-![CommandString_1.png](images/striongs/CommandString_1.png)
+![CommandString_1.png](ReadMe_images/striongs/CommandString_1.png)
 - users:1:email > 이런식으로, 여러 정보를 키에 같이 저장하는 경우가 많음
 - 문법적 강제는 아닌 관행
 - MGET < - 여러 키값을 한번에 가져와야할때 혹은 배치 작업을 할때 성능상 이득을 취할 수있음.
 
 
 - 원자적 증/감 실습 코드 
-![CommandString_2.png](images/striongs/CommandString_2.png)
+![CommandString_2.png](ReadMe_images/striongs/CommandString_2.png)
 - 원자적 증가가 필요한 이유 : 
   - 여러 어플리케이션이 count 값을 하나 증가 시킬때 GET ,SET 만 있다면, 
   - GET 호출 시점이랑 SET 호출 시점의 차이 때문에 싱글 쓰레드로 운영되는 레디스에서 덮어쓰기를 할때 의도하지않은 작업이 일어 날 수 있음.
@@ -147,12 +147,12 @@
 
 - TTL 관련 실습 코드 
 
-![CommandTTL_2.png](images/striongs/CommandTTL_2.png)
+![CommandTTL_2.png](ReadMe_images/striongs/CommandTTL_2.png)
 
 - TTL 설정 X -> -1 , 파기된 KEY(OR 없는 키) -> -2
 
 - MEMORY USAGE
-![MEMORY_USAGE.png](images/striongs/MEMORY_USAGE.png)
+![MEMORY_USAGE.png](ReadMe_images/striongs/MEMORY_USAGE.png)
 
 
 
@@ -168,8 +168,8 @@
     - 리스트 인덱스 값으로 조회
     - 0 -1 : 전체 조회
 
-![Lpush.png](images/striongs/Lpush.png)
-![전체조회.png](images/%EC%A0%84%EC%B2%B4%EC%A1%B0%ED%9A%8C.png)
+![Lpush.png](ReadMe_images/striongs/Lpush.png)
+![전체조회.png](ReadMe_images/%EC%A0%84%EC%B2%B4%EC%A1%B0%ED%9A%8C.png)
 
 
 
@@ -188,7 +188,7 @@
   - SINTER(O(MN)) // 나머지는 기본적으로 O(N)
     - SINTER : 두개의 SETS에서 공통 데이터 조회
 
-![Sets.png](images/striongs/Sets.png)
+![Sets.png](ReadMe_images/striongs/Sets.png)
 
 
 --- 
@@ -208,8 +208,8 @@
   - ZINCRBY
     - 정렬 점수 원자적 증가
     
-![zrank.png](images/striongs/zrank.png)
-![zset.png](images/striongs/zset.png)
+![zrank.png](ReadMe_images/striongs/zrank.png)
+![zset.png](ReadMe_images/striongs/zset.png)
 
 
 ---
@@ -223,7 +223,7 @@
     - hgetall [key]
   - HDEL
   - HINCRBY
-![Hasj.png](images/striongs/Hasj.png)
+![Hasj.png](ReadMe_images/striongs/Hasj.png)
 
 
 
