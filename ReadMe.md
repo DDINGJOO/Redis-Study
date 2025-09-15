@@ -260,10 +260,13 @@
     - bitop [operation] [destination] [source1] [source2] ...
 
 ---
+### Redis transaction
 
+- 명령들을 큐에 모아두고, 트랜잭셩 완료를 전달하면, 일련의 명령을 한번에 처리하는 것 말함
+- single thread 1step (isolate)
 
-
-
+![img_2.png](ReadMe_images/img_2.png)
+- 트랜잭션 종료전에 요청시 Nil 값 반환
 ---
 ### 레디스 성능 짤 
 ![img.png](ReadMe_images/img.png)
