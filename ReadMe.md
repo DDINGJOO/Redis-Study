@@ -265,7 +265,7 @@
 - 명령들을 큐에 모아두고, 트랜잭셩 완료를 전달하면, 일련의 명령을 한번에 처리하는 것 말함
 - single thread 1step (isolate)
 
-![img_2.png](ReadMe_images/img_2.png)
+![img_2.png](ReadMe_images/Bitmap/img_2.png)
 - 트랜잭션 종료전에 요청시 Nil 값 반환
 - 중간에 잘못된 명령어 있을시 전부 롤백 (근데.. 실글사이드 쓰래드 단위이전에 가능..?)
 - 인자값이 잘못된경우는 그냥 빼고 처리
@@ -279,14 +279,14 @@
     - unwatch
       - 동시의 같은 키를 수정하느 상황일시 트랜잭션 취소
 
-      - ![img_3.png](ReadMe_images/img_3.png)
-      - ![img_4.png](ReadMe_images/img_4.png)
+      - ![img_3.png](ReadMe_images/Bitmap/img_3.png)
+      - ![img_4.png](ReadMe_images/Bitmap/img_4.png)
 ---
 ### 레디스 성능 짤 
 ![img.png](ReadMe_images/img.png)
 - 파이프 라인 했을 경우 , 200000만건 입력시 2초 이내로 소요(빌드 통신 뭐 등등 시간 다 합쳐서)
 - 파이프 라인을 해봅시가...
-![img.png](ReadMe_images/12312341₩.png)
+![img.png](ReadMe_images/Bitmap/12312341₩.png)
 
 
 
@@ -308,3 +308,20 @@
 - keys -> scan 으로 적당히 해결
   - scan [cursor] [match] [count]
     - 페이징 기반 -> 커서기반 탐색  정도 성능 향상 있음
+
+
+
+
+
+## cache 
+- 변경 적고 조회 많은 애들 히또!
+
+- cache aside pattern
+  - 흔히 말하는 그거 ㅇㅇ
+  
+- cache write-back pattern
+  - 캐시에 버퍼를 쌓고 한번에 배치작업 
+  - I/O의 리소스 이득 but  유실 가능성 유의
+  
+- local cache, 분산 캐시 패턴
+  - 서비스 간 공통 캐시 영역
