@@ -57,3 +57,9 @@
 ![스크린샷 2025-09-18 오후 5.58.33.png](../ReadMe_images/cache/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7%202025-09-18%20%EC%98%A4%ED%9B%84%205.58.33.png)
 
 ![스크린샷 2025-09-18 오후 6.02.43.png](../ReadMe_images/cache/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7%202025-09-18%20%EC%98%A4%ED%9B%84%206.02.43.png)
+
+
+
+### 결과 
+Redis Monitor에 객체 정보까지 저장해서, 이를 통해 역질렬화 하는것.
+![스크린샷 2025-09-18 오후 6.04.13.png](../ReadMe_images/cache/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7%202025-09-18%20%EC%98%A4%ED%9B%84%206.04.13.png)
