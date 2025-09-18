@@ -8,9 +8,10 @@
 
 - Redis Template
 	- Spring Boot 에서 제공하는 Redis Client
-	- 추상화, 연결관리, 직렬/역직렬 알아서 해준대
-		- -> 걍써!
-		- opsForValue 이런거 opsForList , opsForSet , opsForHash , opsForZSet , opsForGeo
+- 
+  - 추상화, 연결관리, 직렬/역직렬 알아서 해준대
+      - -> 걍써!
+      - opsForValue 이런거 opsForList , opsForSet , opsForHash , opsForZSet , opsForGeo
 
 - Redis Template -> Lettuce -> Redis
 	- 이런식으로 작동
@@ -63,3 +64,18 @@
 ### 결과 
 Redis Monitor에 객체 정보까지 저장해서, 이를 통해 역질렬화 하는것.
 ![스크린샷 2025-09-18 오후 6.04.13.png](../ReadMe_images/cache/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7%202025-09-18%20%EC%98%A4%ED%9B%84%206.04.13.png)
+
+
+
+---
+
+## Redis Hash Annotation
+
+
+![스크린샷 2025-09-18 오후 6.12.16.png](../ReadMe_images/cache/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7%202025-09-18%20%EC%98%A4%ED%9B%84%206.12.16.png)
+
+![스크린샷 2025-09-18 오후 6.12.59.png](../ReadMe_images/cache/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7%202025-09-18%20%EC%98%A4%ED%9B%84%206.12.59.png)
+
+![스크린샷 2025-09-18 오후 6.12.33.png](../ReadMe_images/cache/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7%202025-09-18%20%EC%98%A4%ED%9B%84%206.12.33.png)
+
+이런식으로 사용
