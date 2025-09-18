@@ -30,6 +30,7 @@ public class UserController {
             userEmail = userRepository.findById(id).map(User::getEmail).orElse("User not found");
             // 3 cache
             jedis.set(userEmailUsersKey, userEmail);
+            jedis.setex(userEmailUsersKey, 30, userEmail); // TTL
             // 4. end
             return userEmail;
 
