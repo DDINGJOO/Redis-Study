@@ -102,3 +102,9 @@ Redis Monitor에 객체 정보까지 저장해서, 이를 통해 역질렬화 �
 - 결과는 똑같다!
 
 ---
+
+
+## 성능 테스트 
+- vegeta
+  https://github.com/tsenart/vegeta
+	- 대량 트래픽 처리 테스트
