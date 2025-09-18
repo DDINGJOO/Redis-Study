@@ -3,6 +3,7 @@
   <component name="ExternalStorageConfigurationManager" enabled="true" />
   <component name="FrameworkDetectionExcludesConfiguration">
     <file type="web" url="file://$PROJECT_DIR$/butmap" />
+    <file type="web" url="file://$PROJECT_DIR$/cache" />
     <file type="web" url="file://$PROJECT_DIR$/jedischache" />
     <file type="web" url="file://$PROJECT_DIR$/Lists" />
     <file type="web" url="file://$PROJECT_DIR$/Strings" />
