@@ -33,3 +33,27 @@
 
 - ver2
 ![스크린샷 2025-09-18 오후 5.45.20.png](../ReadMe_images/cache/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7%202025-09-18%20%EC%98%A4%ED%9B%84%205.45.20.png)
+
+
+- service 에서 사용
+![스크린샷 2025-09-18 오후 5.47.50.png](../ReadMe_images/cache/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7%202025-09-18%20%EC%98%A4%ED%9B%84%205.47.50.png)
+
+
+
+- 결과 : 4회요청 
+![스크린샷 2025-09-18 오후 5.49.20.png](../ReadMe_images/cache/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7%202025-09-18%20%EC%98%A4%ED%9B%84%205.49.20.png)
+  - 첫 요청 -> db질의 이후 
+  - 2~4 -> 3회 캐시 히트
+  - 다시보자 ttl 한번더 보자 ttl
+
+
+
+
+
+---
+
+##  General Redis Template
+
+![스크린샷 2025-09-18 오후 5.58.33.png](../ReadMe_images/cache/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7%202025-09-18%20%EC%98%A4%ED%9B%84%205.58.33.png)
+
+![스크린샷 2025-09-18 오후 6.02.43.png](../ReadMe_images/cache/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7%202025-09-18%20%EC%98%A4%ED%9B%84%206.02.43.png)
