@@ -42,6 +42,14 @@
         </option>
       </GradleProjectSettings>
       <GradleProjectSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$/jedischache" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/jedischache" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
         <option name="externalProjectPath" value="$PROJECT_DIR$/strings" />
         <option name="gradleHome" value="" />
         <option name="gradleJvm" value="corretto-24" />
