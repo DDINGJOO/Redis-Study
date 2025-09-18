@@ -350,3 +350,13 @@
 - StringRedisTemplate -> 벨류에 관해서 항상 자바의 String 객체로 받겠다 라는 말
 
 ---
+
+## 트레픽 처리 측정 툴
+- vegeta
+  https://github.com/tsenart/vegeta
+
+
+---
+
+## Replication , Monitoring
+- 추후 두둥등장 
